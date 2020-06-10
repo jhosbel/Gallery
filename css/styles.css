@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    /* background: linear-gradient(#f69d3c, #3f87a6); */
+    background: linear-gradient(70deg, #000, #fff);
+}
+
+/*LOGO-Hamburguesa*/
+
+.logo {
+    background: linear-gradient(70deg, #fff, #000);
+    display: flex;
+    border-bottom: solid 2px #000;
+    width: 100%;
+}
+
+nav {
+    margin-left: 60%;
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    font-size: 40px;
+}
+
+/*CONTENIDO*/
+
+.contenido {
+    text-align: center;
+    display: flex;
+    padding-top: 90px;
+}
+
+.caja-sidebar {
+    margin: 25px;
+    text-align: left;
+    background-color: rgba(169, 169, 169, 0.5);
+    padding: 25px;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 9px 5px 5px #1f1f1f;
+}
+
+.caja-sidebar img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.titulo-sidebar {
+    margin-bottom: 25px;
+}
+
+.text-sidebar {
+    font-size: 20px;
+}
+
+.titulo {
+    margin: 25px;
+}
+
+#img-principal {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 9px 5px 5px #1f1f1f;
+    transition: 0.5s;
+    width: 60%;
+    height: 35%;
+    margin-left: 20%;
+    position: relative;
+}
+
+#img-principal img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*BOTONES*/
+
+#back, #next {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 68%;
+    transition: 0.6s ease;
+}
+
+#back:hover, #next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+#back {
+    left: 37.8%;
+}
+
+#next {
+    right: 15.5%;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.text {
+    padding: 1%;
+    text-align: justify;
+    border: solid;
+    margin: 0px 15%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 9px 5px 5px #1f1f1f;
+    font-size: 20px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: rgb(47, 79, 79);
+    text-align: center;
+    padding: 15px;
+    border-top: solid 2px #000;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: 25px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+
+/*MEDIA QUERY------------------------------------------------*/
+
+@media (max-width: 800px){
+    nav {
+        margin-left: 30%;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    .caja-sidebar {
+        margin-left: 0;
+    }
+
+    #img-principal {
+        width: 100%;
+        height: 15%;
+        margin-left: 0;
+    }
+
+    #back, #next {
+        padding: 5px;
+        font-size: 25px;
+        top: 43%;
+    }
+
+    #back {
+        left: 29.1%;
+    }
+
+    #next {
+        right: 0%;
+    }
+
+    .text {
+        margin: 0;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 450px){
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+    
+    nav {
+        margin-left: 0%;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        font-size: 25px;
+    }
+
+    .contenido {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .caja-sidebar {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    #img-principal {
+        box-shadow: none;
+    }
+
+    .text {
+        box-shadow: none;
+        border: none;
+        padding: 3%;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer ul {
+        display: block;
+    }
+
+    .footer ul li {
+        margin: 5px;
+    }
+
+    .footer ul li a {
+        font-size: 15px;
+
+    }
+
+    #back, #next {
+        top: 274%;
+    }
+
+    #back {
+        left: 0%;
+    }
+}
